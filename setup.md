@@ -24,6 +24,5 @@ Change server port to Server Port
   
 ### build exe (optional)  
   
-`cd Client`  
-`python setup.py build`  
+`pyinstaller -F -w client.py --icon=icon.ico`
   
