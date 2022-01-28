@@ -753,6 +753,8 @@ def accept_thread(server: MultiServer) -> None:
 
 
 if __name__ == '__main__':
+    # use python -c 'from cryptography.fernet import Fernet;print(Fernet.generate_key())' to generate a new key
+    # also remember to replace the key in client.py
     server = MultiServer(8000, b'QWGlyrAv32oSe_iEwo4SuJro_A_SEc_a8ZFk05Lsvkk=')
     accept_thread(server)
     server.menu()
